@@ -1,0 +1,263 @@
+
+body{
+    box-sizing: border-box;
+    font-family: Avenir-Roman,sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+}
+.nav-bg{
+    padding: 0px 20px;
+    background-color: #090b13;
+    height: 72px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+.listado{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.listado .elemento{
+margin-left: 1.4rem;
+}
+.cont-logo{
+    min-width: 70px;
+    height: 38px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+ .logo{
+    
+    background-color: transparent;
+    background-image: url(https://static-assets.bamgrid.com/product/starplus/images/logo.770970996243b55d166fbeb8b1a52b36.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 70px;
+    min-height: 38px;
+
+} 
+.cont-item{
+    height: 24px;
+    min-width: 24px;
+    width: 24px;
+    z-index: 6262;
+    color: rgb(249, 249, 249);
+}
+.cont-item a{
+    fill: rgb(249, 249, 249);
+    
+}
+.cross{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.dots{
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    background-color: rgb(19,19,19);
+    border: 1px solid rgba(151,151,151,0.34);
+    border-radius: 4px;
+    padding: 6px 48px 6px 16px;
+    transition: all 300ms;
+    justify-content: space-between;
+}
+.dots a{
+text-decoration: none;
+font-size: 13px;
+letter-spacing: 1.42px;
+color: #f9f9f9;
+
+}
+.cont-user{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.user{
+    background-image: url(https://theefaofficial.com/wp-content/uploads/2019/02/Cristiano-Ronaldo-.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+
+}
+.cont-main{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    
+}
+.cont-bg{
+    top: 4.5rem;
+    height: 40vw;
+    width: 100vw;
+    position: absolute;
+    background-image: linear-gradient(to right, black 0%, transparent 100%);
+    left: 0;
+
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/85d6da3c-4fa2-4559-95b2-05e1f2fbc3ab/dao4jlv-37da88ec-e418-4fb7-9344-3b8407982646.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg1ZDZkYTNjLTRmYTItNDU1OS05NWIyLTA1ZTFmMmZiYzNhYlwvZGFvNGpsdi0zN2RhODhlYy1lNDE4LTRmYjctOTM0NC0zYjg0MDc5ODI2NDYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fyc1GVXVwH4Isz_F3XXw1yliC3b9e4Mi52YlxyyKMtU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+
+}
+
+/**{
+    outline: 1px solid red;
+}*/
+.game{
+    position: absolute;
+    color: whitesmoke;
+    top: 10%;
+    left: 6%;
+    font-size:  20px;
+    font-weight: 600;
+}
+.espn-logo{
+    height: 100%;
+    width: 100%;
+    margin-left: 1rem;
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/29C23A46FADDF86EB47617376FB735CDAA74821A8DEAC2426F1F2EB840F21E90/scale?);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hora{
+    height: 1.3rem;
+    color: #f9f9f9;
+    font-size: small;
+    background-color: #000;
+}
+.cont-logos{
+height: 1.3rem;
+width: 60%;
+display: flex;
+position: absolute;
+top: 5.5rem;
+left: 6%;
+justify-content:space-between;
+}
+.cont-carousel{
+    position: relative;
+    top: 25rem;
+   width: 100%;
+}
+@media (max-width: 832px) {
+    .cont-imgs1{
+        display: grid!important;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr!important;
+        grid-template-rows:  1fr 9fr 1fr;    
+        column-gap: 0.8rem!important;
+    }
+    .img4, .img8{
+        display: none!important;
+    }
+    .cont-carousel{
+        height: 20%;
+        top: 19rem!important;
+
+    }
+   
+}
+@media (min-width: 824px) {
+   .cont-carousel{
+       height: 20%;
+   }
+}
+@media (min-width: 1115px) {
+   .cont-carousel{
+       height: 25%;
+   }
+}
+@media (min-width: 1200px) {
+    .cont-carousel{
+        height: 30%;
+    }
+   
+}
+
+.carousel, .slide, .carousel-inner, .carousel-item{
+    width:100%;
+    height: 100%;
+}
+.cont-imgs1{
+    display: grid!important;
+    grid-template-columns: 1fr 4.5fr 4.5fr 4.5fr 4.5fr 1fr;
+    grid-template-rows:  1fr 9fr 1fr;    
+    column-gap: 1.5rem;
+}
+
+.imgs1{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+    border: none;
+}
+.imgs1:hover{
+    outline: 3px solid rgba(161, 146, 146, 0.73);
+}
+.img1{
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/F57C45939352CEF63D63D0DAB0FE5A9767C38E161C339C0E34C9C4FEFDB7E654/scale?width=400&aspectRatio=1.78&format=jpeg);
+}
+.img2{
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/CFBE7D424C49AE8B11630E4673F696DF1516A057F64AD3DCBE11DAD557EA8FEC/scale?width=400&aspectRatio=1.78&format=jpeg);
+    grid-column: 3;
+    grid-row: 2;
+}
+.img3{
+background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/FE6543F2B05CF64288B2CEE4A56A0BE838643817D173F6D6A1EF65016194DE9C/scale?width=400&aspectRatio=1.78&format=jpeg);
+grid-column: 4;
+grid-row: 2;
+}
+.img4{
+background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/A13E812647BA16C1C52F3F0CA76ACEA96728BBC5AE1A8316B6968DED4CE5C39E/scale?width=400&aspectRatio=1.78&format=jpeg);
+grid-column: 5;
+grid-row: 2;
+}
+.img5{
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/BE66E67B4C8147B8F5F1357B1C9F53D15A5C055A63F3209DDFD28DCD3281DFB8/scale?width=400&aspectRatio=1.78&format=jpeg);
+    grid-column: 2;
+    grid-row: 2;
+}
+.img6{
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/199A2F5F04A6D4C609366009792E85BF3ABF2901DF99407335431E263768133D/scale?width=400&aspectRatio=1.78&format=jpeg);
+    grid-column: 3;
+    grid-row: 2;
+}
+.img7{
+background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/234CDF60BC6DFA533C2C22A669D82309F515F2E26AE45873BD3897FF0E10682A/scale?width=400&aspectRatio=1.78&format=jpeg);
+grid-column: 4;
+grid-row: 2;
+}
+.img8{
+background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/C5BFC2EF88FB683DDE8077B1FD81646F160E2882599BE11A23D7663D08F40678/scale?width=400&aspectRatio=1.78&format=jpeg);
+grid-column: 5;
+grid-row: 2;
+}
